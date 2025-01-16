@@ -36,13 +36,13 @@ You can host the build anywhere (S3, Cloudfront, etc.), but uploading it directl
 1. **Clone** this repo:
 
    ```bash
-   git clone https://github.com/Ducktatorrr/tagoio-svelte-starter
+   git clone https://github.com/Ducktatorrr/sveltago
    ```
 
 2. **Install dependencies**:
 
    ```bash
-   cd tagoio-svelte-starter
+   cd sveltago
    npm i
    ```
 
