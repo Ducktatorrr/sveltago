@@ -1,4 +1,4 @@
-# tagoio-svelte-starter
+# Sveltago
 
 A starter template for creating custom [TagoIO](https://tago.io/) widgets using [Svelte](https://svelte.dev/)!
 
