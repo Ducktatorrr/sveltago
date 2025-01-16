@@ -2,6 +2,8 @@
 
 A starter template for creating custom [TagoIO](https://tago.io/) widgets using [Svelte](https://svelte.dev/)!
 
+<img src="docs-assets/demo.png" alt="Screenshot of deployed widget" width="50%" />
+
 ## What’s this about?
 
 [TagoIO](https://tago.io/) is an IoT platform that lets you build dashboards and widgets with real device data. You can build your own custom widgets, which TagoIO then loads in an iframe and injects data into.
