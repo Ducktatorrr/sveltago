@@ -4,6 +4,8 @@ A starter template for creating custom [TagoIO](https://tago.io/) widgets using 
 
 <img src="docs-assets/demo.png" alt="Screenshot of deployed widget" width="50%" />
 
+**Hopefully coming soon**: automated deployment
+
 ## What’s this about?
 
 [TagoIO](https://tago.io/) is an IoT platform that lets you build dashboards and widgets with real device data. You can build your own custom widgets, which TagoIO then loads in an iframe and injects data into.
