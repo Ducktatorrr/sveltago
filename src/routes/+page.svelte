@@ -3,8 +3,8 @@
 	import { mockTagoIO } from "$lib/mockTagoIO";
 
 	let loadingText = $state("Loading...");
-	let widgetData = $state<any>({});
-	let realtimeData = $state<any[]>([]);
+	let widgetData = $state<Widget | null>(null);
+	let realtimeData = $state<WidgetVariableData[]>([]);
 
 	$effect(() => {
 		// Load some mock TagoIO data when running locally
@@ -61,7 +61,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					{#each realtimeData as data (data.id)}
+					{#each realtimeData as data (data.data.origin)}
 						{#each data.result as result (result.id)}
 							<tr class="hover:bg-blue-50">
 								<td
@@ -74,8 +74,9 @@
 								>
 								<td
 									class="border border-blue-300 px-4 py-2 text-sm text-gray-600"
-									>{new Date(result.time).toLocaleString()}</td
 								>
+									{new Date(result.time).toLocaleString()}
+								</td>
 							</tr>
 						{/each}
 					{/each}
