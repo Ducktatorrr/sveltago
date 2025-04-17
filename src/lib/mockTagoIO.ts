@@ -60,5 +60,21 @@ export function mockTagoIO() {
 			];
 			callback(mockData);
 		},
+		onSyncUserInformation: (callback: (user: any) => void) => {
+			const mockUser = {
+				token: "73d287b1-8cd9-4d9b-8883-17f34a1007bf",
+				language: "string",
+				runURL: "string",
+				custom_preferences: null,
+				preferences: {
+					timezone: "string",
+					language: "string",
+					date_format: "DD/MM/YYYY",
+					time_format: "24",
+					decimal_separator: ",",
+				},
+			};
+			callback(mockUser);
+		},
 	};
 }
